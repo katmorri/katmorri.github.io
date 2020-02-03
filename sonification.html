@@ -1,0 +1,133 @@
+<!--
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+* Modified by Chad McKell
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Sonification</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/fairy2.jpg">
+
+</head>
+<body>
+
+  <header>
+      <div class="nav">
+
+      <a id="menu-icon"></a>
+
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="research">Research</a></li>
+            <li><a href="publications">Publications</a></li>
+            <li><a href="teaching">Teaching</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+
+      </div>
+  </header>
+
+  <div class="banner">
+	  <img style="width:100%;" id="image" src="images/amp_bw_cover.jpg">
+  </div>
+  
+  
+  <div class="section">
+    <div class="container">
+      <div class="one-half column">
+        <br>
+        <h4><b>Stochastic Sonification</b></h4>
+          <p> 
+            <div style="LINE-HEIGHT:16px; text-align:left"><font color="grey">Inspired by Iannis Xenakis' 1956 work <i>Pithoprakta</i>, I used a 
+            modern laser trapping setup to track Brownian particles and sonify their motion. I built the optics setup as part of my master's 
+            <a href="https://wakespace.lib.wfu.edu/handle/10339/57431">thesis</a> in Physics at Wake Forest University in Winston-Salem, 
+            North Carolina. I sonified the position data of single, optically-trapped Brownian microspheres (like the one shown at right) 
+            using Pure Data and Ableton Live. Each radial displacement of the sphere mapped to an audible pitch. 
+            
+            <br><br>
+            
+            I used three different mapping schemes&mdash;equal-area, biased, and probability mapping. In each scheme, the 
+            centermost subregion of the mapping region corresponded to a single pure tone. In equal-area mapping, the
+            note increased along a particular musical scale as the particle moved out radially into different equal-area 
+            subregions. In biased mapping, the centermost subregion area was enlarged relative to the other subregions. In 
+            probability mapping, the note had a 50-50 percent probability of increasing by some integer number of midi note 
+            numbers or decreasing by some other integer number of midi note numbers each time the particle entered a new 
+            subregion.
+
+            <br> <br>
+            
+            I wrote a conference <a href="/pdf/icmc_2016.pdf">paper</a> that provides more details on the project. I also 
+            made a series of <a href="https://www.youtube.com/user/chadmckell/videos">videos</a> that synchronize the sounds
+            to the actual experimental motion.</font></div>
+            
+          </p>
+      </div>
+      <div class="one-half column">
+        <br> <br> 
+        <video width="300" height="300" loop autoplay>
+          <source src="video/particle_smaller.mp4" type="video/mp4">
+        </video>
+        <table>
+          <tr>
+            <td>Equal-Area</td>
+            <td>
+              <audio controls>
+                <source src="audio/equal.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+          <tr>
+            <td>Biased</td>
+            <td>
+              <audio controls>
+                <source src="audio/biased.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+          <tr>
+            <td>Probability</td>
+            <td>
+              <audio controls>
+                <source src="audio/probability.wav" type="audio/wav">
+              </audio>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer"> 
+      Copyright &copy 2020. Chad McKell.
+      <br><br><br>
+  </div> 
+
+<!-- End Document -->
+</body>
+</html>

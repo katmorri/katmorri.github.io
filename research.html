@@ -1,0 +1,253 @@
+<!--
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+* Modified by Chad McKell
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+   <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Research</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/fairy2.jpg">
+
+
+  <!-- reference for putting images side by side https://www.w3schools.com/howto/howto_css_images_side_by_side.asp -->
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column-special {
+        float: left;
+        width: 33.33%;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row-special::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(61, 68, 165); }
+      } 
+  </style>
+  
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+        
+    <a id="menu-icon"></a>
+        
+      <ul>
+          <li><a href="index">Home</a></li>
+          <li><a class="active" href="research">Research</a></li>
+          <li><a href="publications">Publications</a></li>
+          <li><a href="teaching">Teaching</a></li>
+          <li><a href="about">About</a></li>
+      </ul>
+      
+    </div>
+  </header>
+
+  <div class="banner">
+	  <img style="width:100%;" id="image" src="images/amp_bw_cover.jpg">
+  </div>
+  
+
+  <div class="section">
+      <div class="container">
+       
+          <!--<div class="one-third column">
+          <div class="card">
+            <div class="card-container">
+              physical modeling sound synthesis
+            </div>
+          </div>
+        </div>-->
+
+      <!--<div class="two-thirds column" style="LINE-HEIGHT:16px; text-align:left">-->
+   
+      <br>
+      <h3><b>Research</b></h3>
+
+        <a href="instruments"><h5><b>Sound Synthesis for Computer Animation</b></h5></a>
+        <!--<a href="instruments.html"><h5><b>Sound Synthesis for Computer Animation</b></h5></a>-->
+
+        <div style="LINE-HEIGHT:16px; text-align:left"><font color="grey">I am actively involved in researching sound synthesis
+        algorithms designed for use in computer animation. Of particular interest at the moment are physical modeling techniques for sound synthesis.
+        Physical modeling sound synthesis is a numerical approach for generating mechanical vibration from mathematical descriptions 
+        of acoustic systems. Compared to abstract methods of sound synthesis, such as additive, wavetable, and FM synthesis, physical 
+        modeling synthesis appears to be superior for reproducing more accurate natural vibration and offering more intuitive user 
+        control. In regards to accuracy, abstract digital synthesis produces sound that, while may be desirable for achieving a particular 
+        aesthetic, is nonetheless unmistakably artificial. This may be due to the fact that abstract methods require the specification of 
+        many control parameters which, if mismatched in any way with the waveforms they hope to reproduce, will create unnatural output. 
+        Physical modeling methods, on the other hand, require fewer control parameters and thus may lead to more physically accurate sound.</font></div>
+        <br>
+
+        <img style="width:80%;" src="images/physics_montage.jpg">
+        <br><br>
+
+        <hr>
+
+
+
+        <a href="sonification"><h5><b>Compositional Algorithms</b></h5></a>
+
+        <div style="LINE-HEIGHT:16px; text-align:left"><font color="grey"> I am currently working on a computer program to generate a continuous stream of Brownian position data for 
+          real-time sonification and manipulation. In a model based on the equation of motion of an optically-ordered Brownian particle, the 
+          composer could adjust the parameters of the Brownian audio effect by altering the physical parameters of the particle, the Brownian 
+          trap, or the background fluid environment. Increasing the transverse irradiance gradient of the laser, for example, would make the 
+          particle more likely to reside in the centermost sub-region and less likely to escape the trap. Such a change would increase the 
+          stability of the lowest-frequency note and reduce the likelihood of higher-pitched, stochastic sequences. Increasing the fluid viscosity, 
+          moreover, would slow the particle’s average velocity, effectively increasing the duration over which notes were played. Data-mapping 
+          algorithms could also be incorporated into the model to manipulate the sampling rate and mapping areas in real time.</font></div>
+        <br>
+
+
+
+        <!--
+
+        <a href="lofelt.html"><h5><b>Room Acoustics and Spatial Audio</b></h5></a>
+
+        <div style="LINE-HEIGHT:16px; text-align:left"><font color="grey"></font></div>
+        <br>
+
+        <img style="width:70%;" src="images/physics_montage.jpg">
+        <br><br>
+
+        <hr>
+
+
+        <a href="lofelt.html"><h5><b>Audio Effects and Algorithmic Composition</b></h5></a>
+
+        <div style="LINE-HEIGHT:16px; text-align:left"><font color="grey"></font></div>
+        <br>
+
+        <img style="width:70%;" src="images/physics_montage.jpg">
+        <br><br>
+
+        <hr>
+
+        -->
+
+
+      </div>
+    <!--</div>-->
+</div>
+
+
+ <!--
+
+  
+  <div class="section">
+    <div class="container">
+      
+
+      <div class="one-third column">
+        <div class="img-wrap">
+          <a href="virtual_analog.html"><img class="u-max-full-width" src="images/tube.jpg" alt="virtual analog" width="700">
+          <h3><p class="img-description">Virtual Analog</p></h3></a>
+        </div>
+      </div>
+      
+      
+      <div class="one-third column">
+        <div class="img-wrap">
+          <a href="instruments.html"><img class="u-max-full-width" src="images/string.jpg" alt="instrument synthesis" width="700">
+          <h3><p class="img-description">Instrument Synthesis</p></h3></a>
+        </div>
+      </div>
+      
+      <div class="one-third column">
+        <div class="img-wrap">
+          <a href="effects.html"><img class="u-max-full-width" src="images/effects.jpg" alt="audio effects" width="700">
+          <h3><p class="img-description">Audio Effects</p></h3></a>
+        </div>
+      </div>
+      
+    </div>
+
+    <br>
+    
+    <div class="container">
+  
+      <div class="one-third column">
+        <div class="img-wrap">
+          <a href="sonification.html"><img class="u-max-full-width" src="images/icon.jpg" alt="sonification" width="700">
+          <h3><p class="img-description">Data Sonification</p></h3></a>
+        </div>
+      </div>
+      
+
+
+      <div class="one-third column">
+        <div class="img-wrap">
+          <a href="speech.html"><img class="u-max-full-width" src="images/speech.jpg" alt="speech" width="700">
+          <h3><p class="img-description">Speech</p></h3></a>
+        </div>
+      </div>
+           
+      <div class="one-third column">
+        <div class="img-wrap">
+          <a href="lofelt.html"><img class="u-max-full-width" src="images/lofelt.jpg" alt="lofelt" width="700">
+          <h3><p class="img-description">Haptics</p></h3></a>
+        </div>
+      </div>
+
+    </div>
+  
+    <br>
+
+    
+    <div class="container">
+
+      
+         <div class="one-third column">
+        <div class="img-wrap">
+          <a href="moog.html"><img class="u-max-full-width" src="images/moog.jpg" alt="moog" width="700">
+          <h3><p class="img-description">Moog</p></h3></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+-->
+
+
+
+
+  <div class="footer"> 
+      Copyright &copy 2020. Chad McKell.
+      <br><br><br>
+  </div> 
+
+</body>
+</html>
+
